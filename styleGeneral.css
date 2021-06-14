@@ -1,0 +1,321 @@
+body{
+    margin: 0;
+    background-color:#eee8e8;
+    color:#555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 { 
+    text-align: center;
+}
+
+span.col2{
+    display: inline-table;
+    text-align: center;
+    width:49%;
+}
+
+.button1{
+    font-family: Tahoma;
+    font-style: bold;
+    font-size: 15px;
+    background-color: #555555;
+    color:#f4f4f4;
+    padding:10px 15px;
+    border: none;
+}
+
+.button1:hover{
+    background:rgb(122, 83, 83);
+    /* color: #404040; */
+}
+
+.my-form {
+    border:1px #ccc solid;
+    padding:10px;
+    border-radius:15px;
+    text-align: center;
+}
+
+.my-form label{
+	display:block;
+}
+
+.button2 {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    float: right;
+    margin-right: 2em;
+    margin-top:1em;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+
+.my-form div{
+    font-size: 20px;
+    margin: 25px;
+}
+
+.my-form input[type = "text"], input[type = "password"], input[type = "tel"]{
+    width: 50%;
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+    font-size: 2.8em;
+}
+
+.container2{
+    margin: auto;
+    width: 95%;
+    font-size: 15px;
+    align-content: center;
+}
+
+.fit{
+    height: 90%;
+    width: 95%;
+    
+}
+
+.simpleList{
+    display: grid;
+    height: 80%;
+    align-content: center;
+    grid-template-columns: repeat(4,minmax(0px, auto));
+    grid-template-rows: repeat(4,minmax(0px, auto));
+    grid-template-areas:"ir1 info1 info1 info1" "ir2 info2 info2 info2" "ir3 info3 info3 info3" "ir4 info4 info4 info4";
+}
+
+.room1{
+    grid-area:info1;
+}
+
+.room2{
+    grid-area:info2;
+}
+
+.room3{
+    grid-area:info3;
+}
+
+.room4{
+    grid-area:info4;
+}
+
+.imgR1{
+    grid-area:ir1;
+
+}
+
+.imgR2{
+    grid-area:ir2;
+
+}
+
+.imgR3{
+    grid-area:ir3;
+
+}
+
+.imgR4{
+    grid-area:ir4;
+
+}
+
+/* Login */
+.containerLogin{
+    margin: auto;
+    width: 40%;
+    font-size: 2.8em;
+}
+  
+.top{
+    margin-top: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.title1{
+    font-size: 1.8em;
+}
+
+
+/* Headfoot */
+.headfoot {
+    margin: 0;
+    font: 0.4em/ 1.1 Arial, Helvetica, sans-serif;
+}
+
+.headfoot header{
+    background-color: black;
+    padding: .5em;
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.headstyle {
+    font-size: 9em;
+    margin: 10px auto;
+    padding: 0;
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    line-height: 3em;
+    align-items: center;
+}
+
+.footer-container{
+    background-color:  #404040;
+    color:white;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    gap:250px;
+    font-size: 2em;
+    margin-top: 20%;
+}
+.item1{
+    text-align:center;
+    padding: 20px;
+}
+.item2{
+    text-align:right;
+    
+}
+.item3{
+    text-align:right;
+    padding-right: 20px;
+}
+
+.headfoot a {
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 1em;
+}
+
+.headfoot a:hover{
+    color:rgb(122, 83, 83);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    width:50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* main page */
+.grid-container{
+    margin: auto;
+    font-size: 2.8em;
+
+    display: grid;
+    height: 80%;
+    align-content: center;
+    grid-template-columns:repeat(5,minmax(250px, auto));
+    grid-template-rows: repeat(5,minmax(250px, auto));
+    grid-template-areas: "info info img1 img1 img1" "info info img1 img1 img1" "img3 img3 fac fac fac" 
+    "events events events img2 img2" "about about map map map";
+    text-align: justify;
+}
+
+.img{
+    grid-area:img1;
+    margin-top:10%;
+    margin-right:1em;
+}
+
+
+.info{
+    grid-area: info;
+    padding: 5%;
+    margin-top:5%;
+    margin-left:8%;
+}
+
+.events{
+    grid-area: events;
+    padding: 5%;
+    margin-left: 5%;
+    margin-top:0;
+}
+
+.img2{
+    grid-area:img2;
+    margin-right:1em;
+    height: 80%;
+    width: 90%;
+    margin-top:5%;
+}
+
+.facilities{
+    grid-area: fac;
+    padding: 5%;
+    margin-right:1em;
+    margin-left:0;
+}
+
+.img3{
+    grid-area: img3;
+    margin-left: 13%;
+    margin-right:0;
+    margin-top:5%;
+}
+
+.about{
+    grid-area: about;
+    margin-left: 15%;
+}
+
+.map{
+    grid-area: map;
+    margin-left:10%;
+    max-height: 20%;
+    max-width: 20%;
+}
+
+.echo{
+    text-align: left;
+    font-size: 1.5em;
+    max-width: 100%;
+
+}
